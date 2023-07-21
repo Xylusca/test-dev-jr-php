@@ -37,7 +37,9 @@ php artisan migrate
 ```shell
 php artisan serve
 ```
-A API estará disponível em Cadastro: http://localhost:8000/api/service-create Consulta: http://localhost:8000/api/service-orders.
+A API estará disponível nas links:
+* Cadastro: http://localhost:8000/api/service-create 
+* Consulta: http://localhost:8000/api/service-orders
 
 ## Documentação do Postman
 Para testar a API utilizando o Postman, acesse a documentação disponível em: [Documenter Postman](https://documenter.getpostman.com/view/27609426/2s93m5zh2w#intro)
