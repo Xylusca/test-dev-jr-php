@@ -1,64 +1,52 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Projeto API Laravel - Processo Seletivo Jump Tecnologia
+Este é um projeto desenvolvido como parte de um processo seletivo para a posição de Desenvolvedor PHP Júnior na empresa Jump Tecnologia. O objetivo do projeto é criar uma API utilizando Laravel, que seja capaz de cadastrar dados enviados via método POST em formato JSON e validá-los antes de armazená-los no banco de dados. Além disso, a API deve oferecer uma consulta via método GET, permitindo a filtragem de resultados através de parâmetros na URL.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Funcionalidades Principais
+Cadastro de dados via método POST em formato JSON.
+Validação dos dados antes do armazenamento no banco de dados.
+Consulta de dados via método GET com suporte a filtros na URL.
 
-## About Laravel
+## Utilização
+Para utilizar a API, siga os passos abaixo:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+1 - Clone este repositório em um diretório de sua preferência:
+```shell
+git clone https://github.com/seu-usuario/projeto-api-laravel.git
+```
+2 - Acesse o diretório do projeto:
+```shell
+cd projeto-api-laravel
+```
+3 - Instale as dependências do projeto:
+```shell
+composer install
+```
+4 - Crie um arquivo .env na raiz do projeto, baseando-se no arquivo .env.example fornecido.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+5 - Gere a chave de aplicação:
+```shell
+php artisan key:generate
+```
+6 - Crie o banco de dados e configure as credenciais de acesso no arquivo .env.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+7 - Execute as migrações do banco de dados para criar as tabelas necessárias:
+```shell
+php artisan migrate
+```
+8 - Inicie o servidor de desenvolvimento:
+```shell
+php artisan serve
+```
+A API estará disponível em Cadastro: http://localhost:8000/api/service-create Consulta: http://localhost:8000/api/service-orders.
 
-## Learning Laravel
+## Documentação do Postman
+Para testar a API utilizando o Postman, acesse a documentação disponível em: [Documenter Postman](https://documenter.getpostman.com/view/27609426/2s93m5zh2w#intro)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Como Contribuir
+Se tiver interesse em contribuir com o projeto, fique à vontade para abrir issues, enviar pull requests ou entrar em contato através do meu perfil no GitHub: seu-usuario
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Sinta-se à vontade para fazer sugestões, correções ou melhorias. Toda contribuição é bem-vinda!
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
